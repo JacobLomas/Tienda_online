@@ -1,0 +1,24 @@
+.slide{
+    width: 90%;
+    padding:0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    background-color:lighten(#6c757d, 20%) ;
+    &-img{
+        width: 40%;
+        @include response(md){
+            width: 100%;
+        }
+        img{
+            box-shadow: 0 0 0 0.2rem rgba(221, 161, 255, 0.5);
+        }
+    }
+    &-body{
+        width: 50%;
+        @include response(md){
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+}

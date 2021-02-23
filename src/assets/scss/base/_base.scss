@@ -1,0 +1,23 @@
+@import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css" );
+*{
+    font-family: $mainFont;
+}
+h4{
+    font-weight: 900  !important;
+}
+.deck{
+    padding-left: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.navbar-brand, h1, h4, h2{
+    font-family: $titleFont;
+}
+
+a{
+    cursor: pointer;
+}
+.router-view{
+    min-height: 50vh;
+}

@@ -1,0 +1,38 @@
+.signup{
+    @include flexing;
+    padding: 2rem;
+    &-img{
+        width: 50%;
+        @include response(md){
+            display: none;
+        }
+    }
+    &-form{
+        width: 50%;
+        @include response(md){
+            width: 100%;
+        }
+        h6{
+            width: 100%;
+        }
+        &-social{
+            @include flexing;
+            justify-content: space-evenly;
+            &-item{
+                font-size: 3rem;
+                display: inline-block;
+                width: fit-content;
+                cursor: pointer;
+                transition: all .4s ease;
+                &:hover{
+                    color: $primary;
+                    transform: translateY(-3px);
+                    -webkit-transform: translateY(-3px);
+                    -moz-transform: translateY(-3px);
+                    -ms-transform: translateY(-3px);
+                    -o-transform: translateY(-3px);
+                }
+            }
+        }
+    }
+}

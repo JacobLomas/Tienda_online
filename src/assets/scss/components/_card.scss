@@ -1,0 +1,58 @@
+.card{
+    width: 20vw;
+    @include response(xl){
+        width: 25vw;
+    }
+    @include response(lg){
+        width: 26vw;
+    }
+    @include response(md){
+        width: 38vw;
+    }
+    @include response(sm){
+        width: 70vw;
+    }
+}
+.card-horizontal{
+    background-color: white;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    padding-right: 1rem;
+    .card-body{
+        width: 50%;
+    }
+    .card-img-top{
+        width: 20%;
+        @include response(xl){
+            width: 30%;
+        }
+        @include response(lg){
+            width: 40%;
+        }
+        @include response(md){
+            width: 50%;
+        }
+        @include response(sm){
+            width: 100%;
+        }
+    }
+    .card-bottom{
+        width: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            width: fit-content !important;
+        }
+
+        @include response(lg){
+            margin-left: auto;
+            width: fit-content;
+        }
+    }
+}

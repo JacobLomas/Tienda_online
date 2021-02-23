@@ -20,10 +20,12 @@
       </div>
     </div>
 
-    <div class="w-75 mt-5">
+    <div class="w-75 mt-5" v-if="totalCarrito>0">
       <router-link to="/" class="btn btn-secondary mr-5">Seguir comprando</router-link>
       <button class="btn btn-primary ml-5">Finalizar pedido <span class="bg-light pl-1 pr-1">{{totalCarrito}}€</span></button>
     </div>
+
+    <h1 class="text-center mt-5" v-if="totalCarrito<=0">¡Vaya, el carrito está vacío!</h1>
 
   </section>
 
